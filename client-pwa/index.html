@@ -3,11 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Client PWA</title>
+  <title>White Beluga™ Client App</title>
+  <!-- Pull in the global CSS -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- PWA manifest & service worker -->
   <link rel="manifest" href="manifest.json">
-  <script src="service-worker.js" defer></script>
+  <script defer src="../scripts/aura.js"></script>
 </head>
-<body>
-  <h1>Welcome to White Beluga Client PWA</h1>
+<body class="font-satoshi bg-gray-50 text-gray-900">
+  <header class="p-6 bg-blue-800 text-white text-center">
+    <h1 class="text-3xl font-serif">Client Legacy App</h1>
+  </header>
+
+  <main class="p-6 space-y-6">
+    <section class="p-4 bg-white rounded-lg shadow">
+      <h2 class="text-2xl mb-2">Ritual Tracker</h2>
+      <p>Log your daily rituals and keep your legacy in motion.</p>
+      <button class="btn">Log a Ritual</button>
+    </section>
+
+    <section class="p-4 bg-white rounded-lg shadow">
+      <h2 class="text-2xl mb-2">Emotional Rhythm</h2>
+      <p>View your emotional rhythm over time.</p>
+      <button class="btn">View Rhythm</button>
+    </section>
+
+    <section class="p-4 bg-white rounded-lg shadow">
+      <h2 class="text-2xl mb-2">Legacy Reports</h2>
+      <p>Access your PDF heritage reports.</p>
+      <a href="client_data/reports/july-report.pdf" class="btn secondary">View Reports</a>
+    </section>
+  </main>
 </body>
 </html>
