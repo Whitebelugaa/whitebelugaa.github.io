@@ -3,9 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Founder Portal</title>
+  <title>White Beluga™ Founder Portal</title>
+  <link rel="stylesheet" href="../style.css">
+  <script defer src="../scripts/time-matrix.js"></script>
+  <script defer src="../scripts/aura.js"></script>
 </head>
-<body>
-  <h1>White Beluga Founder Dashboard</h1>
+<body class="font-satoshi bg-gray-100 text-gray-900">
+  <header class="p-6 bg-green-800 text-white text-center">
+    <h1 class="text-3xl font-serif">Founder Control Panel</h1>
+  </header>
+
+  <main class="p-6 space-y-6">
+    <section class="p-4 bg-white rounded-lg shadow">
+      <h2 class="text-2xl mb-2">Upload Legacy Reports</h2>
+      <input type="file" id="pdf-upload" accept="application/pdf" class="border p-2 w-full" />
+      <div id="pdf-preview" class="mt-4"></div>
+    </section>
+
+    <section class="p-4 bg-white rounded-lg shadow">
+      <h2 class="text-2xl mb-2">Emotional Logs</h2>
+      <div id="emotion-logs" class="space-y-2">
+        <!-- JavaScript will inject logs here -->
+        <p class="italic text-gray-500">No logs yet.</p>
+      </div>
+    </section>
+
+    <button id="backup" class="btn">Backup Now to GitHub</button>
+  </main>
 </body>
 </html>
