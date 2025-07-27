@@ -2,15 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>White Beluga All-in-One</title>
+  <title>White Beluga™ - My Legacy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Satoshi:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide/dist/lucide.js"></script>
+  <!-- Framer Motion -->
+  <script src="https://unpkg.com/framer-motion/dist/framer-motion.umd.js"></script>
+  <!-- TimeMatrix -->
+  <script defer src="scripts/time-matrix.js"></script>
+  <!-- AURA Assistant -->
+  <script defer src="scripts/aura.js"></script>
 </head>
-<body>
-  <h1>Welcome to White Beluga</h1>
-  <nav>
-    <a href="client-pwa/index.html">Client PWA</a> |
-    <a href="founder-portal/index.html">Founder Portal</a> |
-    <a href="offersheet.html">Offer Sheet</a>
-  </nav>
+<body class="font-satoshi bg-gray-50 text-gray-900">
+
+  <!-- Sacred Time Strip -->
+  <div id="sacred-time" class="fixed top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-purple-600 animate-pulse"></div>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col justify-center items-center bg-cover bg-center" style="background-image: url('assets/villa.jpg');">
+    <h1 class="text-6xl font-serif mb-6 animate-fade-in">Begin My Legacy</h1>
+    <div class="space-x-4">
+      <a href="client-pwa/" class="px-6 py-3 bg-blue-800 text-white rounded-lg hover:scale-105 transform transition">My Legacy</a>
+      <a href="offersheet.html" class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:scale-105 transform transition">Explore the Club</a>
+      <a href="founder-portal/" class="px-6 py-3 bg-green-800 text-white rounded-lg hover:scale-105 transform transition">Step with Founder</a>
+    </div>
+  </section>
+
+  <!-- Timeline Scroll -->
+  <section class="py-20">
+    <div class="max-w-4xl mx-auto space-y-16">
+      <div class="timeline-item" data-time="Birth">
+        <h2 class="text-3xl font-semibold">Birth</h2>
+        <p class="mt-2">Your journey begins here...</p>
+      </div>
+      <div class="timeline-item" data-time="Ritual">
+        <h2 class="text-3xl font-semibold">Rituals</h2>
+        <p class="mt-2">Preserve sacred traditions...</p>
+      </div>
+      <!-- Add more items -->
+    </div>
+  </section>
+
 </body>
 </html>
